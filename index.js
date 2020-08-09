@@ -1,7 +1,4 @@
-var rect = {
-    perimemter: (x,y) => (2*(x+y)),
-    area: (x,y) => (x*y)
-};
+var rect = require('./rectangle');
 
 function solveReact(l,b)
 {
@@ -13,7 +10,7 @@ function solveReact(l,b)
     else
     {
         console.log("The area of the rectangle is" + rect.area(l,b));
-        console.log("The perimeter of the rectangle is" + rect.perimemter(l,b));
+        console.log("The perimeter of the rectangle is" + rect.perimeter(l,b));
     }
 }
 solveReact(2,4);
